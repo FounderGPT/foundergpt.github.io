@@ -147,7 +147,7 @@ docs
             button button
                 type button
                 class btn btn-outline-light
-                html About
+                html About Us
                 :click
                     {
                         window.open('https://www.foundergpt.com', '_blank');
@@ -281,7 +281,7 @@ docs
                         display inline-table
                         float left
                     text text
-                        val Tutorials
+                        val Basic Integration
                 :mouseover
                     {
                         block.css('color', '#424242');
@@ -306,18 +306,14 @@ docs
             ul list
                 css
                     margin-left 25px
-                list-item tut-intro
+                list-item basic-intro
                     val Intro
-                list-item tut-setup
-                    val Setup
-                list-item tut-basics
-                    val Basics
-                list-item tut-demos
-                    val Demos
-                list-item tut-cmd-line
-                    val CLI
-                list-item tut-alt-clients
-                    val Clients
+                list-item basic-login
+                    val Sign In
+                list-item basic-query
+                    val Ask Questions
+                list-item basic-oauth
+                    val Add Integrations
         div spacerBottom
             css
                 height 40px
@@ -367,7 +363,7 @@ docs
                 {
                     var page = data.page;
                     // console.log(data);
-                    if (page == 'tut-intro') {
+                    if (page == 'basic-intro') {
                         block.child('intro').css('display', 'block');
                     } else {
                         var md_src = app.docs_src[page] || '<br/>';

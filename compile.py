@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from os import walk
 from json import dumps
 
@@ -8,11 +10,11 @@ for (dirpath, dirnames, filenames) in walk('./src'):
 
 docs = {}
 for f in files:
-    with open('src/' + f, 'r') as file:
+    with open('./src/' + f, 'r') as file:
         content = file.read()
         docs[f[:-3]] = content
 
 js = 'function getDocsSource() { return ' + dumps(docs) + '; }'
 
-with open('docs.js', 'w') as file:
+with open('./docs/docs.js', 'w') as file:
     file.write(js)
