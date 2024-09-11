@@ -10,6 +10,10 @@ No
 
 ### Request
 
+Type: `JSON`
+
+Fields:
+
 -   `email`
     -   type: `string`
     -   description: The email of the user.
@@ -18,6 +22,10 @@ No
     -   description: The password of the user.
 
 ### Response
+
+Type: `JSON`
+
+Fields:
 
 -   `success`
     -   type: `boolean`

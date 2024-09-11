@@ -10,6 +10,10 @@ Yes - provide the token (obtained from the sign-in endpoint) in the `Authorizati
 
 ### Request
 
+Type: `JSON`
+
+Fields:
+
 -   `code`
     -   type: `string`
     -   description: The authorization code provided by OAuth after logging into the third-party service via OAuth.
@@ -21,6 +25,10 @@ Yes - provide the token (obtained from the sign-in endpoint) in the `Authorizati
     -   description: The redirect URI used by your client app during the OAuth PKCE flow.
 
 ### Response
+
+Type: `JSON`
+
+Fields:
 
 -   `success`
     -   type: `boolean`

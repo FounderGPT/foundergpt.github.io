@@ -10,6 +10,10 @@ Yes - provide the token (obtained from the sign-in endpoint) in the `Authorizati
 
 ### Request
 
+Type: `JSON`
+
+Fields:
+
 -   `query`
     -   type: `string`
     -   description: A natural language question, request for information, or request to complete a task.
@@ -18,6 +22,10 @@ Yes - provide the token (obtained from the sign-in endpoint) in the `Authorizati
     -   description: The current time including timezone, in RFC3339 format or this format: `yyyy-MM-dd'T'HH:mm:ssZZZZZ`
 
 ### Response
+
+Type: `JSON`
+
+Fields:
 
 -   `success`
     -   type: `boolean`
