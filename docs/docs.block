@@ -1,6 +1,6 @@
     *
 
-// pocketjs docs blockfile
+// foundergpt docs blockfile
 
 // define custom blocks
 !break
@@ -105,7 +105,7 @@ docs
         block logo
             css
                 position absolute
-                top 1px
+                top 0
                 left 80px
                 width 70px
             div imgwrap
@@ -114,13 +114,13 @@ docs
                     height 41px
                     width 41px
                 image image
-                    src ../img/pocketjs_w.png
+                    src /img/foundergpt_logo_square.png
                     height 41px
                     width 41px
         block logoname
             css
                 position absolute
-                top -2px
+                top 2px
                 left 155px
                 width auto
                 color white
@@ -128,7 +128,7 @@ docs
                 font-weight 100
             div textwrap
                 text t1
-                    html pocketjs
+                    html founderGPT
                     css
                         font-size 37px
                         letter-spacing 1px
@@ -147,10 +147,10 @@ docs
             button button
                 type button
                 class btn btn-outline-light
-                html View Source
+                html About
                 :click
                     {
-                        window.open('https://github.com/anuvgupta/pocketjs', '_blank');
+                        window.open('https://www.foundergpt.com', '_blank');
                     }
     div menu
         css
@@ -318,176 +318,6 @@ docs
                     val CLI
                 list-item tut-alt-clients
                     val Clients
-        div item2
-            css
-                height 30px
-                width 100%
-                font-size 17px
-            a link
-                css
-                    color #4a4a4a
-                    transition color 0.1s ease
-                href #item2List
-                data-toggle collapse
-                block imgwrap
-                    css
-                        margin-left 40px
-                        width 30px
-                        height 30px
-                        opacity 0.4
-                        display inline-table
-                        float left
-                        transition opacity 0.1s ease
-                    image arrow
-                        src img/right.png
-                        height 18px
-                        width 18px
-                        css
-                            margin auto
-                            transition transform 0.2s ease, margin 0.2s ease
-                block textwrap
-                    css
-                        margin-left 10px
-                        width auto
-                        height 30px
-                        display inline-table
-                        float left
-                    text text
-                        val PHP Server Methods
-                :mouseover
-                    {
-                        block.css('color', '#424242');
-                        block.child('imgwrap').css('opacity', '0.6');
-                    }
-                :mouseout
-                    {
-                        block.css('color', '#4a4a4a');
-                        block.child('imgwrap').css('opacity', '0.4');
-                    }
-                :click
-                    {
-                        if (block.parent().sibling('item2List').node().className.indexOf('show') !== -1) {
-                            block.child('imgwrap/arrow').css('transform', 'rotate(0deg)').css('margin-bottom', '0');
-                        } else {
-                            block.child('imgwrap/arrow').css('transform', 'rotate(90deg)').css('margin-bottom', '1px');
-                        }
-                    }
-        div item2List
-            class collapse
-            id item2List
-            ul list
-                css
-                    margin-left 25px
-                list-item php-construct
-                    val __construct
-                list-item php-destruct
-                    val __destruct
-                list-item php-open
-                    val open
-                list-item php-close
-                    val close
-                list-item php-send
-                    val send
-                list-item php-sendAll
-                    val sendAll
-                list-item php-bind
-                    val bind
-                list-item php-call
-                    val call
-                list-item php-callArr
-                    val callArr
-                list-item php-onConn
-                    val onConn
-                list-item php-onRun
-                    val onRun
-                list-item php-onClose
-                    val onClose
-                list-item php-log
-                    val log
-                list-item php-setOpt
-                    val setOpt
-        div item3
-            css
-                height 30px
-                width 100%
-                font-size 17px
-            a link
-                css
-                    color #4a4a4a
-                    transition color 0.1s ease
-                href #item3List
-                data-toggle collapse
-                block imgwrap
-                    css
-                        margin-left 40px
-                        width 30px
-                        height 30px
-                        opacity 0.4
-                        display inline-table
-                        float left
-                        transition opacity 0.1s ease
-                    image arrow
-                        src img/right.png
-                        height 18px
-                        width 18px
-                        css
-                            margin auto
-                            transition transform 0.2s ease, margin 0.2s ease
-                block textwrap
-                    css
-                        margin-left 10px
-                        width auto
-                        height 30px
-                        display inline-table
-                        float left
-                    text text
-                        val JS Client Methods
-                :mouseover
-                    {
-                        block.css('color', '#424242');
-                        block.child('imgwrap').css('opacity', '0.6');
-                    }
-                :mouseout
-                    {
-                        block.css('color', '#4a4a4a');
-                        block.child('imgwrap').css('opacity', '0.4');
-                    }
-                :click
-                    {
-                        if (block.parent().sibling('item3List').node().className.indexOf('show') !== -1) {
-                            block.child('imgwrap/arrow').css('transform', 'rotate(0deg)').css('margin-bottom', '0');
-                        } else {
-                            block.child('imgwrap/arrow').css('transform', 'rotate(90deg)').css('margin-bottom', '1px');
-                        }
-                    }
-        div item3List
-            class collapse
-            id item3List
-            ul list
-                css
-                    margin-left 25px
-                list-item js-connect
-                    val connect
-                list-item js-send
-                    val send
-                list-item js-bind
-                    val bind
-                list-item js-call
-                    val call
-                list-item js-callArr
-                    val callArr
-                list-item js-onOpen
-                    val onOpen
-                list-item js-onClose
-                    val onClose
-                list-item js-online
-                    val online
-                list-item js-getID
-                    val getID
-                list-item js-getAddress
-                    val getAddress
-                list-item js-getPort
-                    val getPort
         div spacerBottom
             css
                 height 40px
@@ -557,12 +387,12 @@ docs
                 }
             div intro
                 css
-                    padding 20px 30px
+                    padding 20px 30px 30px
                     position relative
-                    min-height 340px
+                    //min-height 340px
                     line-height 1.7
                 h1 title
-                    html pocketjs
+                    html FounderGPT
                     css
                         letter-spacing 1px
                         padding-bottom 6px
@@ -571,32 +401,30 @@ docs
                 div spacer
                     css
                         height 1px
-                a homelink
-                    target _blank
-                    href ../
-                    image logo
-                        src ../img/pocketjs.png
-                        height 220px
-                        width 220px
-                        css
-                            opacity 0.95
-                            float right
-                            margin 0 20px 10px
+                //a homelink
+                //    target _blank
+                //    href https://www.foundergpt.com
+                //    image logo
+                //        src /img/foundergpt_logo_dark_square.png
+                //        height 220px
+                //        width 220px
+                //        css
+                //            opacity 0.95
+                //            float right
+                //            margin 0 20px 10px
                 p p
                     html
                         `
-                            pocketjs is a lightweight WebSocket library for writing realtime applications in PHP and JavaScript.
+                            FounderGPT is an AI assistant for early seed stage founders. This site contains developer-facing documentation for the FounderGPT API.
                             <br/><br/>
-                            This site contains a getting started guide, instructions for the command line utility, and links to demo projects. It also contains documentation/explanations of all the individual functions of the library.
-                            <br/><br/>
-                            View the main site <a href="../">here</a> and GitHub project page <a href="https://github.com/anuvgupta/pocketjs">here</a>.
+                            Learn more about FounderGPT <a href="https://www.foundergpt.com">here</a>.
                             <br/>
                         `
-                div textwrap
-                    css
-                        padding-top 15px
-                    text text
-                        html &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—&nbsp;&nbsp;Anuv
+                // /div textwrap
+                //     css
+                //         padding-top 15px
+                //     text text
+                //         html &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—&nbsp;&nbsp;Anuv
             div markedContent
                 id markedContent
                 css
