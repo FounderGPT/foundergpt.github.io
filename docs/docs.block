@@ -388,7 +388,7 @@ docs
                     //min-height 340px
                     line-height 1.7
                 h1 title
-                   //html FounderGPT
+                    //html FounderGPT
                     html Introduction
                     css
                         letter-spacing 1px
