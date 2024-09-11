@@ -4,14 +4,13 @@ Allow FounderGPT to utilize your account in a third-party service (i.e. allow Fo
 
 Takes an authorization code, code verifier, and redirect URI after logging into the third-party service via OAuth PKCE, and saves the third-party token to the user's account, allowing FounderGPT to access the third-party service on the user's behalf.
 
-#### Requires Authentication
-
-Yes - provide the token (obtained from the sign-in endpoint) in the `Authorization` HTTP header, with typical Bearer token format.
-
 ### Endpoint
 
 Method: `POST`  
 URL: `app.foundergpt.com/auth`
+Authentication: Yes, required
+
+-   Provide the token (obtained from the sign-in endpoint) in the `Authorization` HTTP header, with typical Bearer token format.
 
 ### Request
 

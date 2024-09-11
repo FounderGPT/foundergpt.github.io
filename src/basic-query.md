@@ -4,14 +4,13 @@ Ask FounderGPT to provide information or complete a task.
 
 Takes a query and returns a response from FounderGPT, after FounderGPT has gathered the information or completed the requested task.
 
-#### Requires Authentication
-
-Yes - provide the token (obtained from the sign-in endpoint) in the `Authorization` HTTP header, with typical Bearer token format.
-
 ### Endpoint
 
 Method: `POST`  
 URL: `app.foundergpt.com/query`
+Authentication: Yes, required
+
+-   Provide the token (obtained from the sign-in endpoint) in the `Authorization` HTTP header, with typical Bearer token format.
 
 ### Request
 
