@@ -8,6 +8,11 @@ Takes an authorization code, code verifier, and redirect URI after logging into 
 
 Yes - provide the token (obtained from the sign-in endpoint) in the `Authorization` HTTP header, with typical Bearer token format.
 
+### Endpoint
+
+Method: `POST`  
+URL: `app.foundergpt.com/auth`
+
 ### Request
 
 Type: `JSON`

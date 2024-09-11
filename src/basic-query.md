@@ -8,6 +8,11 @@ Takes a query and returns a response from FounderGPT, after FounderGPT has gathe
 
 Yes - provide the token (obtained from the sign-in endpoint) in the `Authorization` HTTP header, with typical Bearer token format.
 
+### Endpoint
+
+Method: `POST`  
+URL: `app.foundergpt.com/query`
+
 ### Request
 
 Type: `JSON`

@@ -8,6 +8,11 @@ Takes a username and password, and returns a token that can be used to authentic
 
 No
 
+### Endpoint
+
+Method: `POST`  
+URL: `app.foundergpt.com/login`
+
 ### Request
 
 Type: `JSON`
