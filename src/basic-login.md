@@ -1,8 +1,10 @@
 # Sign In
 
-Log in to the FounderGPT API using email and password. _Note: to sign up, please contact us at gptfounder@gmail.com as the app is currently invite only._
+Log in to the FounderGPT API using email and password.
 
-Takes a username and password, and returns a token that can be used to authenticate future requests like querying FounderGPT and setting up third-party integrations.
+-   Takes a username and password, and returns a token that can be used to authenticate future requests like querying FounderGPT and setting up third-party integrations.
+
+_Note: to sign up, please contact us at gptfounder@gmail.com as the app is currently invite only._
 
 ### Endpoint
 

@@ -1,8 +1,11 @@
 # Add Integrations
 
-Allow FounderGPT to utilize your account in a third-party service (i.e. allow FounderGPT to manage your Google Calendar, Gmail, etc.). Utilizes OAuth 2.0 PKCE flow (learn more [here](https://oauth.net/2/pkce/)). _Please contact us at gptfounder@gmail.com to get help with any questions about authorizing integrations using this flow._
+Allow FounderGPT to utilize your account in a third-party service. For example, allow FounderGPT to manage your Google Calendar, or send emails for you via Gmail.
 
-Takes an authorization code, code verifier, and redirect URI after logging into the third-party service via OAuth PKCE, and saves the third-party token to the user's account, allowing FounderGPT to access the third-party service on the user's behalf.
+-   Takes an authorization code, code verifier, and redirect URI after logging into the third-party service via OAuth PKCE, and saves the third-party token to the user's account, allowing FounderGPT to access the third-party service on the user's behalf.
+-   Follows OAuth 2.0 PKCE flow (learn more [here](https://oauth.net/2/pkce/)).
+
+_Please contact us at gptfounder@gmail.com to get help with any questions about authorizing integrations using this flow._
 
 ### Endpoint
 

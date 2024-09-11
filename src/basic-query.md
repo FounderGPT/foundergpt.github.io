@@ -2,7 +2,7 @@
 
 Ask FounderGPT to provide information or complete a task.
 
-Takes a query and returns a response from FounderGPT, after FounderGPT has gathered the information or completed the requested task.
+-   Takes a query and returns a response from FounderGPT, after FounderGPT has gathered the information or completed the requested task.
 
 ### Endpoint
 
